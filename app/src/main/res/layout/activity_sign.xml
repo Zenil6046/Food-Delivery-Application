@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Sign">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Create a New Account"
+        android:textColor="@color/black"
+        android:textSize="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <EditText
+        android:id="@+id/sign_ph_no"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Enter your Phone No"
+        android:inputType="number"
+        android:paddingLeft="15sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/sign_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_name" />
+
+
+    <EditText
+        android:id="@+id/sign_name"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:paddingLeft="15sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <EditText
+        android:id="@+id/sign_password"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Enter your New Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Enter you Password to confirm"
+        android:inputType="textPassword"
+        android:paddingLeft="15sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
